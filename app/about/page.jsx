@@ -8,7 +8,6 @@ const page = () => {
   const containerRef = useRef();
   const { scrollYProgress } = useScroll({ container: containerRef });
 
-
   return (
     <motion.div
       className="h-full"
@@ -19,7 +18,7 @@ const page = () => {
       {/* container */}
       <div className="h-full overflow-scroll lg:flex" ref={containerRef}>
         {/* text container */}
-        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-48 lg:w-2/3 lg:pr-0  xl:w-1/2">
+        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-48 lg:w-2/3 lg:pr-0  xl:w-2/3">
           {/* biography container */}
           <div className="flex flex-col gap-8 justify-center">
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
@@ -47,7 +46,7 @@ const page = () => {
           </div>
 
           {/* Skills Container */}
-          <div className="flex flex-col gap-8 justify-center" >
+          <div className="flex flex-col gap-8 justify-center">
             {/* Skills Header */}
             <h1 className="font-bold text-2xl">SKILLS</h1>
 
@@ -137,7 +136,7 @@ const page = () => {
           </div>
 
           {/* education container */}
-          <div className="flex flex-col gap-8 justify-center pb-48" >
+          <div className="flex flex-col gap-8 justify-center pb-48">
             <h1 className="font-bold text-2xl">EDUCATION</h1>
 
             {/* education list */}
@@ -153,11 +152,14 @@ const page = () => {
                   {/* description */}
                   <div className="p-3 text-sm italic">
                     Completed my G.C.E (A/L) exams in 2019 with subjects in
-                    Combined Mathematics, Chemistry, and Physics. This helped me
-                    develop strong problem-solving and analytical skills.
+                    Combined Mathematics, Chemistry, and Physics.
+                  </div>
+                  <div className="p-3 text-sm italic">
+                    This helped me develop strong problem-solving and analytical
+                    skills.
                   </div>
                   {/* time */}
-                  <div className="p-3 text-blue-500 text-sm font-semibold">
+                  <div className="p-3 text-green-100 text-sm font-semibold">
                     2017–2019
                   </div>
                 </div>
@@ -166,7 +168,7 @@ const page = () => {
                   {/* line */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* circle */}
-                    <div className=" absolute w-5 h-5 rounded-full ring-4 ring-blue-500 bg-white -left-2"></div>
+                    <div className=" absolute w-5 h-5 rounded-full ring-4 ring-teal-400 bg-white -left-2"></div>
                   </div>
                 </div>
 
@@ -183,7 +185,7 @@ const page = () => {
                   {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-blue-500 bg-white -left-2"></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-teal-400 bg-white -left-2"></div>
                   </div>
                 </div>
 
@@ -195,12 +197,15 @@ const page = () => {
                   </div>
                   {/* DESCRIPTION */}
                   <div className="p-3 text-sm italic">
-                    Bachelor of Science (Hons) in Software Engineering. This
-                    program provides in-depth knowledge and skills in software
-                    development, preparing me for a career in the tech industry.
+                    Bachelor of Science (Hons) in Software Engineering.
+                  </div>
+                  <div className="p-3 text-sm italic">
+                    This program provides in-depth knowledge and skills in
+                    software development, preparing me for a career in the tech
+                    industry.
                   </div>
                   {/* TIME */}
-                  <div className="p-3 text-blue-500 text-sm font-semibold">
+                  <div className="p-3 text-green-100 text-sm font-semibold">
                     2021 - Present
                   </div>
                 </div>

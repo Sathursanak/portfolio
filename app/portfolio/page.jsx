@@ -35,7 +35,7 @@ const projects = [
   {
     num: "03",
     category: " Individual Project",
-    title: "ChatMate — One-on-One Chat Web Application",
+    title: "ChatMate- One-on-One Chat Web Application",
     description: "Developed a real-time chat application for one-on-one communication, leveraging WebSocket for real-time data exchange.",
     stack: [{ name: "HTML" }, { name: "CSS" }, { name: "JavaScript" }, { name: "Spring Boot" }, { name: "WebSocket" }],
     img: "/project1.jpg",
@@ -45,7 +45,7 @@ const projects = [
   {
     num: "04",
     category: " Group Project",
-    title: "Nook — Real-Time Housing Application",
+    title: "Nook- Real-Time Housing Application",
     description: "Contributed to the frontend development of a mobile application that simplifies housing searches for university students with features like room value estimation and virtual tours.",
     stack:  [{ name: "React Native" }, { name: "Spring Boot" }, { name: "MongoDB" }],
     img: "/project1.jpg",
@@ -55,7 +55,7 @@ const projects = [
   {
     num: "05",
     category: " Group Project",
-    title: "Moodwave — Music and Emotion Analysis",
+    title: "Moodwave- Music and Emotion Analysis",
     description: "Worked on frontend development of a web application for analyzing music and synchronizing emotion markers based on beat detection.",
     stack: [{ name: "HTML" }, { name: "CSS" }, { name: "JavaScript" }, { name: "PHP" }, { name: "MySQL" }],
     img: "/project1.jpg",
@@ -65,7 +65,7 @@ const projects = [
   {
     num: "06",
     category: " Group Project",
-    title: "SweetSlice — Custom Cake Ecommerce Website",
+    title: "SweetSlice- Custom Cake Ecommerce Website",
     description: "Collaborated on building an ecommerce website that enables users to order custom cakes online with various personalization options.",
     stack: [{ name: "MongoDB" }, { name: "Express.js" }, { name: "React.js" }, { name: "Vite" }, { name: "Node.js" }],
     img: "/project1.jpg",
@@ -120,7 +120,7 @@ const page = () => {
               <p className="">{project.description}</p>
 
               {/* stack */}
-              <ul className="flex gap-4 text-sm text-blue-900">
+              <ul className="flex gap-4 text-sm text-green-100">
                 {project.stack.map((item, index) => {
                   return (
                     <li key={index} className=" text-xl text-accent">
@@ -171,7 +171,7 @@ const page = () => {
             >
               {projects.map((project, index) => (
                 <SwiperSlide key={index} className="w-full">
-                  <div className="h-[460px] relative group flex justify-center items-center bg-blue-500">
+                  <div className="h-[460px] relative group flex justify-center items-center bg-teal-500">
                   <img
                       src={project.img}
                       alt={project.title}
