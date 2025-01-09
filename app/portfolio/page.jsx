@@ -16,18 +16,29 @@ const projects = [
     num: "01",
     category: " Individual Project",
     title: "Postify- Blog  Web Application ",
-    description: "Developing a blog application with features like infinite scrolling, user roles, and content filters. The platform focuses on creating a seamless experience for users and administrators.",
-    stack: [{ name: "React.js" }, { name: "Node.js" }, { name: "Express.js" }, { name: "MongoDB" }],
+    description:
+      "Developing a blog application with features like infinite scrolling, user roles, and content filters. The platform focuses on creating a seamless experience for users and administrators.",
+    stack: [
+      { name: "React.js" },
+      { name: "Node.js" },
+      { name: "Express.js" },
+      { name: "MongoDB" },
+    ],
     live: "",
-    img:"/postify.png" ,
+    img: "/postify.png",
     githubLink: "https://github.com/Sathursanak/Postify.git",
   },
   {
     num: "02",
     category: " Individual Project",
     title: "Animated Portfolio Website",
-    description: "Building a visually engaging portfolio website featuring interactive animations and a responsive layout to showcase projects and skills.",
-    stack: [{ name: "Next.js" }, { name: "Framer Motion" }, { name: "Tailwind CSS" }],
+    description:
+      "Building a visually engaging portfolio website featuring interactive animations and a responsive layout to showcase projects and skills.",
+    stack: [
+      { name: "Next.js" },
+      { name: "Framer Motion" },
+      { name: "Tailwind CSS" },
+    ],
     img: "/porfolio.png",
     live: "",
     githubLink: "https://github.com/Sathursanak/portfolio.git",
@@ -36,8 +47,15 @@ const projects = [
     num: "03",
     category: " Individual Project",
     title: "ChatMate- One-on-One Chat Web Application",
-    description: "Developed a real-time chat application for one-on-one communication, leveraging WebSocket for real-time data exchange.",
-    stack: [{ name: "HTML" }, { name: "CSS" }, { name: "JavaScript" }, { name: "Spring Boot" }, { name: "WebSocket" }],
+    description:
+      "Developed a real-time chat application for one-on-one communication, leveraging WebSocket for real-time data exchange.",
+    stack: [
+      { name: "HTML" },
+      { name: "CSS" },
+      { name: "JavaScript" },
+      { name: "Spring Boot" },
+      { name: "WebSocket" },
+    ],
     img: "/chatmate.png",
     live: "",
     githubLink: "https://github.com/Sathursanak/chatmate.git",
@@ -46,8 +64,13 @@ const projects = [
     num: "04",
     category: " Group Project",
     title: "Nook- Real-Time Housing Application",
-    description: "Contributed to the frontend development of a mobile application that simplifies housing searches for university students with features like room value estimation and virtual tours.",
-    stack:  [{ name: "React Native" }, { name: "Spring Boot" }, { name: "MongoDB" }],
+    description:
+      "Contributed to the frontend development of a mobile application that simplifies housing searches for university students with features like room value estimation and virtual tours.",
+    stack: [
+      { name: "React Native" },
+      { name: "Spring Boot" },
+      { name: "MongoDB" },
+    ],
     img: "/project1.jpg",
     live: "",
     githubLink: "https://github.com/Thars7/Nook.git",
@@ -56,8 +79,15 @@ const projects = [
     num: "05",
     category: " Group Project",
     title: "Moodwave- Music and Emotion Analysis",
-    description: "Worked on frontend development of a web application for analyzing music and synchronizing emotion markers based on beat detection.",
-    stack: [{ name: "HTML" }, { name: "CSS" }, { name: "JavaScript" }, { name: "PHP" }, { name: "MySQL" }],
+    description:
+      "Worked on frontend development of a web application for analyzing music and synchronizing emotion markers based on beat detection.",
+    stack: [
+      { name: "HTML" },
+      { name: "CSS" },
+      { name: "JavaScript" },
+      { name: "PHP" },
+      { name: "MySQL" },
+    ],
     img: "/project1.jpg",
     live: "",
     githubLink: "https://github.com/Sathursanak/MoodWave.git",
@@ -66,8 +96,15 @@ const projects = [
     num: "06",
     category: " Group Project",
     title: "SweetSlice- Custom Cake Ecommerce Website",
-    description: "Collaborated on building an ecommerce website that enables users to order custom cakes online with various personalization options.",
-    stack: [{ name: "MongoDB" }, { name: "Express.js" }, { name: "React.js" }, { name: "Vite" }, { name: "Node.js" }],
+    description:
+      "Collaborated on building an ecommerce website that enables users to order custom cakes online with various personalization options.",
+    stack: [
+      { name: "MongoDB" },
+      { name: "Express.js" },
+      { name: "React.js" },
+      { name: "Vite" },
+      { name: "Node.js" },
+    ],
     img: "/project1.jpg",
     live: "",
     githubLink: "https://github.com/malkiPamoda/SweetSliceNew.git",
@@ -105,7 +142,7 @@ const page = () => {
               <div className="text-8xl leading-none font-extrabold text-black text-outline">
                 {project.num}
               </div>
-              
+
               {/* title */}
               <div className="text-[42px] font-bold leading-none text-black group-hover:text-accent duration-500 capitalize">
                 {project.title}
@@ -172,12 +209,12 @@ const page = () => {
               {projects.map((project, index) => (
                 <SwiperSlide key={index} className="w-full">
                   <div className="h-[460px] relative group flex justify-center items-center bg-black">
-  <img
-    src={project.img}
-    alt={project.title}
-    className="w-full h-full object-contain rounded-lg"
-  />
-</div>
+                    <img
+                      src={project.img}
+                      alt={project.title}
+                      className="w-full h-full object-contain rounded-lg"
+                    />
+                  </div>
                 </SwiperSlide>
               ))}
             </Swiper>
