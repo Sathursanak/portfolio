@@ -1,7 +1,6 @@
 "use client";
 import { motion, useScroll } from "framer-motion";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
-import Brain from "../../components/brain";
 import RotatingIcons from "../../components/toolimg";
 import { useRef } from "react";
 
