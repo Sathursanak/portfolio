@@ -2,6 +2,7 @@
 import { motion, useScroll } from "framer-motion";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 import Brain from "../../components/brain";
+import RotatingIcons from "../../components/toolimg";
 import { useRef } from "react";
 
 const page = () => {
@@ -215,7 +216,7 @@ const page = () => {
         </div>
         {/* svg container */}
         <div className="hidden lg:block sticky top-0 z-30   w-1/3 xl:w-1/2 ">
-          <Brain scrollYProgress={scrollYProgress} />
+          <RotatingIcons scrollYProgress={scrollYProgress} />
         </div>
       </div>
     </motion.div>

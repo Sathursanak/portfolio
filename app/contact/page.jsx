@@ -74,7 +74,7 @@ const ContactPage = () => {
             <form
               onSubmit={sendEmail}
               ref={form}
-              className="bg-purple-50 rounded-xl flex flex-col gap-6 p-6 lg:p-10 justify-center"
+              className="bg-teal-100 rounded-xl flex flex-col gap-6 p-6 lg:p-10 justify-center"
             >
               <span>
                 <h3 className="text-2xl font-bold lg:text-4xl mb-4 lg:mb-5 ">

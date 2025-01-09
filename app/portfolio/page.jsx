@@ -19,7 +19,7 @@ const projects = [
     description: "Developing a blog application with features like infinite scrolling, user roles, and content filters. The platform focuses on creating a seamless experience for users and administrators.",
     stack: [{ name: "React.js" }, { name: "Node.js" }, { name: "Express.js" }, { name: "MongoDB" }],
     live: "",
-    img:"/project1.png" ,
+    img:"/postify.png" ,
     githubLink: "https://github.com/Sathursanak/Postify.git",
   },
   {
@@ -28,7 +28,7 @@ const projects = [
     title: "Animated Portfolio Website",
     description: "Building a visually engaging portfolio website featuring interactive animations and a responsive layout to showcase projects and skills.",
     stack: [{ name: "Next.js" }, { name: "Framer Motion" }, { name: "Tailwind CSS" }],
-    img: "/project1.jpg",
+    img: "/porfolio.png",
     live: "",
     githubLink: "https://github.com/Sathursanak/portfolio.git",
   },
@@ -38,7 +38,7 @@ const projects = [
     title: "ChatMate- One-on-One Chat Web Application",
     description: "Developed a real-time chat application for one-on-one communication, leveraging WebSocket for real-time data exchange.",
     stack: [{ name: "HTML" }, { name: "CSS" }, { name: "JavaScript" }, { name: "Spring Boot" }, { name: "WebSocket" }],
-    img: "/project1.jpg",
+    img: "/chatmate.png",
     live: "",
     githubLink: "https://github.com/Sathursanak/chatmate.git",
   },
@@ -171,13 +171,13 @@ const page = () => {
             >
               {projects.map((project, index) => (
                 <SwiperSlide key={index} className="w-full">
-                  <div className="h-[460px] relative group flex justify-center items-center bg-teal-500">
-                  <img
-                      src={project.img}
-                      alt={project.title}
-                      className="w-full h-full object-cover rounded-lg"
-                    />
-                  </div>
+                  <div className="h-[460px] relative group flex justify-center items-center bg-black">
+  <img
+    src={project.img}
+    alt={project.title}
+    className="w-full h-full object-contain rounded-lg"
+  />
+</div>
                 </SwiperSlide>
               ))}
             </Swiper>
