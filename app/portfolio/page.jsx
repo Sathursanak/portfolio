@@ -11,6 +11,8 @@ import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 
 import Link from "next/link";
 
+
+
 const projects = [
   {
     num: "01",
@@ -71,7 +73,7 @@ const projects = [
       { name: "Spring Boot" },
       { name: "MongoDB" },
     ],
-    img: "/project1.jpg",
+    img: "/nook.jpeg",
     live: "",
     githubLink: "https://github.com/Thars7/Nook.git",
   },
@@ -88,7 +90,7 @@ const projects = [
       { name: "PHP" },
       { name: "MySQL" },
     ],
-    img: "/project1.jpg",
+    img: "/moodwave.png",
     live: "",
     githubLink: "https://github.com/Sathursanak/MoodWave.git",
   },
@@ -105,7 +107,7 @@ const projects = [
       { name: "Vite" },
       { name: "Node.js" },
     ],
-    img: "/project1.jpg",
+    img: "/sweetslice.png",
     live: "",
     githubLink: "https://github.com/malkiPamoda/SweetSliceNew.git",
   },
