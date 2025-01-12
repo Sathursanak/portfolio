@@ -41,7 +41,7 @@ const RotatingIcons = () => {
         position: { x: -2, y: -3, z: 2 },
       },
       {
-        url: "https://brandslogos.com/wp-content/uploads/thumbs/react-logo-black-and-white-1.png",
+        url: "https://is3-ssl.mzstatic.com/image/thumb/Purple126/v4/e4/8c/28/e48c2894-a83a-d3ae-833e-2c158be39757/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg",
         position: { x: 0, y: 4, z: 3 },
       },
       {
