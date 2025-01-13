@@ -100,7 +100,11 @@ const Navbar = () => {
             style={{ pointerEvents: "auto" }} // Ensure it responds to clicks
           >
             {links.map((link) => (
-              <motion.div variants={listItemVariants} key={link.title}>
+              <motion.div
+                variants={listItemVariants}
+                key={link.title}
+                className="z-50" // Ensures the links are on top of other elements
+              >
                 <Link href={link.url} className="cursor-pointer">
                   {link.title}
                 </Link>
