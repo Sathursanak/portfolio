@@ -1,17 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import React from "react";
-import { useState, useRef } from "react";
-
+import React, { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
-
 import Link from "next/link";
-
-
 
 const projects = [
   {
@@ -134,7 +128,7 @@ const page = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
+      className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0 px-4 sm:px-6" // Added sm:px-6 for small screen padding
     >
       <div className="container mx-auto ">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
@@ -151,7 +145,6 @@ const page = () => {
               </div>
               {/* category */}
               <div className="text-[28px] font-semi-bold leading-none text-black group-hover:text-accent duration-500 capitalize">
-                {" "}
                 {project.category}
               </div>
 
@@ -200,7 +193,7 @@ const page = () => {
               </button>
             </div>
           </div>
-          <div className="w-full xl:w-[50%]">
+          <div className="w-full xl:w-[50%] hidden xl:block">
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
@@ -220,6 +213,16 @@ const page = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
+          </div>
+          {/* Mobile view image */}
+          <div className="w-full xl:hidden mb-6">
+            <div className="relative group flex justify-center items-center bg-black">
+              <img
+                src={project.img}
+                alt={project.title}
+                className="w-full h-[300px] object-contain rounded-lg"
+              />
+            </div>
           </div>
         </div>
       </div>

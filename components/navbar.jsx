@@ -24,29 +24,29 @@ const Navbar = () => {
     opened: {
       x: "0",
       transition: {
-        when : "beforeChildren",
-        staggerChildren: 0.2,},
+        when: "beforeChildren",
+        staggerChildren: 0.2,
+      },
     },
   };
 
   const listItemVariants = {
-     closed:{
+    closed: {
       x: -10,
       opacity: 0,
-    
-     },
-     opened:{
+    },
+    opened: {
       x: 0,
       opacity: 1,
-     }
+    },
   };
+
   return (
     <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
       {/* Desktop Navigation Links */}
       <div className="hidden md:flex gap-8">
         {links.map((link) => (
-          <NavLink link={link} key={link.title}/>
-          
+          <NavLink link={link} key={link.title} />
         ))}
       </div>
 
@@ -85,7 +85,7 @@ const Navbar = () => {
           onClick={() => setOpen((prev) => !prev)}
         >
           {open ? (
-            <MdClose className="text-4xl text-white" />
+            <MdClose className="text-4xl text-white absolute top-4 right-4 z-50" />
           ) : (
             <MdMenu className="text-4xl text-black" />
           )}
@@ -96,11 +96,14 @@ const Navbar = () => {
             variants={listVariants}
             initial="closed"
             animate="opened"
-            className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl z-50"
+            className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl z-40"
+            style={{ pointerEvents: "auto" }} // Ensure it responds to clicks
           >
             {links.map((link) => (
               <motion.div variants={listItemVariants} key={link.title}>
-                <Link href={link.url}>{link.title}</Link>
+                <Link href={link.url} className="cursor-pointer">
+                  {link.title}
+                </Link>
               </motion.div>
             ))}
           </motion.div>

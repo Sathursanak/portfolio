@@ -88,6 +88,9 @@ const page = () => {
                   <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                     Spring Boot
                   </div>
+                  <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                    Node.js
+                  </div>
                 </div>
               </div>
 
@@ -100,6 +103,18 @@ const page = () => {
                   </div>
                   <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                     MySQL
+                  </div>
+                </div>
+              </div>
+              {/* Tools and Frameworks */}
+              <div className="flex flex-col gap-4">
+                <h2 className="font-semibold text-lg">Tools</h2>
+                <div className="flex gap-4 flex-wrap">
+                  <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                    Github
+                  </div>
+                  <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                    Figma
                   </div>
                 </div>
               </div>
