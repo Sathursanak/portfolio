@@ -128,7 +128,7 @@ const page = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0 px-4 sm:px-6" // Added sm:px-6 for small screen padding
+      className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-6 px-4 sm:px-6" // Added sm:px-6 for small screen padding
     >
       <div className="container mx-auto ">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
