@@ -58,18 +58,18 @@ const projects = [
   },
   {
     num: "04",
-    category: " Group Project",
-    title: "Nook- Real-Time Housing Application",
+    category: " Individual Project",
+    title: "Task Manager",
     description:
-      "Contributed to the frontend development of a mobile application that simplifies housing searches for university students with features like room value estimation and virtual tours.",
+      "Built a web application to streamline task management with features like task creation, status updates, search functionality, and filtering. Users can easily track progress and manage pending tasks.",
     stack: [
-      { name: "React Native" },
-      { name: "Spring Boot" },
-      { name: "MongoDB" },
+      { name: "React.js" },
+      { name: "Node.js" },
+      { name: "Express.js" },
+      { name: "MySQL" },
     ],
-    img: "/nook.jpeg",
-    live: "",
-    githubLink: "https://github.com/Thars7/Nook.git",
+    img: "/task-manager.jpeg",
+    githubLink: "https://github.com/Sathursanak/task.git",
   },
   {
     num: "05",
